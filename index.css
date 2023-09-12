@@ -1,0 +1,160 @@
+body{
+    background-color: #4C566A;
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.ContactBar{
+    background-color: #2E3440;
+    width: 35vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.Logo{
+    position: center;
+    position: relative;
+    font-size: 5vw;
+    display: block;
+    text-align: center;
+    color: #BF616A;
+}
+
+.Contacts{
+    overflow: scroll;
+    height: 78vh;
+}
+
+.Contact{
+    padding-left: 2vw;
+    position: center;
+    width: 35vw;
+    display: block;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    color: #D8DEE9;
+    font-size: 3vw;
+    background-color: #3B4252;
+    border-top: 2px solid #2E3440; 
+}
+
+.Contact:hover {
+    background-color: #2E3440;
+    transition: 0.7s;
+}
+
+.ContactImage{
+    margin-left: 0;
+    margin-top: 1vh;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.ContactName{
+    display: inline-block;
+    margin-left: 1vw;
+    vertical-align: middle;
+    text-align: center;
+    position: center;
+}
+.LastText{
+    font-size: 2vw;
+    margin-top: 0;
+    color: #929AA9; ##middle Grey
+}
+.TextArea{
+    margin-left: 35vw;
+    margin-bottom: 15vh;
+    height: 84vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+.TextBar{
+    background-color: #3B4252;
+    height: 16vh;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 35vw;
+    overflow: scoll;
+    scoll-behavior: smooth;
+    text-align: center;
+    justify-content: center;
+}
+.TextInput{
+    background-color: #D8DEE9;
+    border: none;
+    position: center;
+    margin-left 5vw;
+    margin-right 2vw;
+    width: 58xw;
+    max-width: 56vw;
+    outline: none;
+    overflow-y: scoll;
+    scroll-behavior: smooth;
+    border-radius: 2vh;
+    min-height: 3vh;
+    max-height: 13vh;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.Text{
+    background-color: #88C0C0;
+    margin-top: 1vh;
+    margin-left: 25px;
+    font-size: large;
+    border-radius: 25px 25px 0px 25px;
+    max-width: 30vw;
+    display: block;
+}
+
+
+
+
+
+.grow-wrap {
+    /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+    display: grid;
+    width: 58vw;
+    max-width: 58vw;
+    min-height: 5vw;
+    max-height: 13vw;
+    margin-top: 1vh;
+  }
+  .grow-wrap::after {
+    /* Note the weird space! Needed to preventy jumpy behavior */
+    content: attr(data-replicated-value) " ";
+  
+    /* This is how textarea text behaves */
+    white-space: pre-wrap;
+  
+    /* Hidden from view, clicks, and screen readers */
+    visibility: hidden;
+  }
+  .grow-wrap > textarea {
+    /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+    resize: none;
+  
+    /* Firefox shows scrollbar on growth, you can hide like this. */
+    overflow: hidden;
+  }
+  .grow-wrap > textarea,
+  .grow-wrap::after {
+    /* Identical styling required!! */
+    border: 1px solid black;
+    padding: 0.5rem;
+    font: inherit;
+  
+    /* Place on top of each other */
+    grid-area: 1 / 1 / 2 / 2;
+  }

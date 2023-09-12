@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<title>EasyChat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<body>
+
+<!-- Sidebar -->
+<div class="ContactBar">
+  <h3 class="Logo">EasyChat</h3>
+  <div class="Contacts">
+    <button class="Contact">
+      <img src="phoenix.jpeg" class="ContactImage">
+      <p class="ContactName">Contact 1</p>
+      <p class="LastText">How are you?</p>
+    </button>
+    <button class="Contact">
+      <img src="phoenix.jpeg" class="ContactImage">
+      <p class="ContactName">Contact 1</p>
+      <p class="LastText">How are you?</p>
+    </button>
+    <button class="Contact">
+      <img src="phoenix.jpeg" class="ContactImage">
+      <p class="ContactName">Contact 1</p>
+      <p class="LastText">How are you?</p>
+    </button>
+    <button class="Contact">
+      <img src="phoenix.jpeg" class="ContactImage">
+      <p class="ContactName">Contact 1</p>
+      <p class="LastText">How are you?</p>
+    </button>
+  </div>
+</div>
+<div class="TextArea">
+    <textarea class="Text">This is a Text Sent</textarea>
+    <textarea class="Text">This is a Text Recieved</textarea>
+</div>
+
+
+  <div class="TextBar">
+    <div class="grow-wrap" class="TextInput">
+      <textarea class="TextInput" name="text" id="text" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+   </div>
+ </div>
+      
+</body>
+</html>
