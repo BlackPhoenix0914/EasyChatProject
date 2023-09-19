@@ -68,7 +68,7 @@ body{
 .LastText{
     font-size: 2vw;
     margin-top: 0;
-    color: #929AA9; ##middle Grey
+    color: #929AA9;
 }
 .TextArea{
     margin-left: 35vw;
@@ -86,7 +86,6 @@ body{
     right: 0;
     left: 35vw;
     overflow: scoll;
-    scoll-behavior: smooth;
     text-align: center;
     justify-content: center;
 }
@@ -94,8 +93,8 @@ body{
     background-color: #D8DEE9;
     border: none;
     position: center;
-    margin-left 5vw;
-    margin-right 2vw;
+    margin-left: 5vw;
+    margin-right: 2vw;
     width: 58xw;
     max-width: 56vw;
     outline: none;
@@ -108,13 +107,24 @@ body{
     justify-content: center;
     font-size: large;
 }
-.Text{
+.TextSent{
     background-color: #88C0C0;
     margin-top: 1vh;
-    margin-left: 25px;
-    font-size: large;
+    margin-left: 31vw;
+    font-size: x-large;
     border-radius: 25px 25px 0px 25px;
     max-width: 30vw;
+    height: 5vh;
+    display: block;
+}
+.TextRecieved{
+    background-color: #88C0C0;
+    margin-top: 1vh;
+    margin-left: 1 vw;
+    font-size: x-large;
+    border-radius: 25px 25px 25px 0px;
+    max-width: 30vw;
+    height: 5vh;
     display: block;
 }
 
@@ -158,3 +168,5 @@ body{
     /* Place on top of each other */
     grid-area: 1 / 1 / 2 / 2;
   }
+
+  
